@@ -1,0 +1,571 @@
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Sarala', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/******************секция header***********/
+
+.header {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: url(../img/backgrounds/buildings.png) no-repeat center/cover;
+}
+
+.header__body {
+    padding: 40px 0 70px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__content {
+    text-align: center;
+}
+
+.header__logo {
+    width: 101.62px;
+    height: 23px;
+}
+
+.header__title {
+    font-family: 'Sarala', sans-serif;
+    font-size: 60px;
+    line-height: 70px;
+    text-transform: uppercase;
+    letter-spacing: 5.70937px;
+    color: white;
+}
+
+.header__subtitle {
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+}
+
+.header__scroll-btn {
+    letter-spacing: 3.7px;
+    text-transform: uppercase;
+    color: white;
+    background: transparent;
+}
+
+.header__scroll-btn:hover {
+    background-color: black;
+}
+
+/****************секция nav***************/
+
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 65px;
+    padding: 24px 12% 24px;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+}
+
+.nav__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    width: 79.53px;
+    height: 18px;
+    background: url(../img/icons/logo/nav-logo.png) center no-repeat;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 410px;
+}
+
+.nav__link {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #48555B;
+}
+
+.nav__link:hover {
+    font-weight: 700;
+    color: #00A4E5;
+}
+
+.menu-btn {
+    position: relative;
+    z-index: 1;
+    display: none;
+    top: calc(50% - 14px);
+    right: 0;
+    width: 30px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.menu-btn__burger {
+    position: absolute;
+    top: 13px;
+    height: 2px;
+    width: 30px;
+    background-color: #333333;
+}
+
+.menu-btn__burger:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    height: 2px;
+    width: 30px;
+    background-color: #333333;
+}
+
+.menu-btn__burger:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    height: 2px;
+    width: 30px;
+    background-color: #333333;
+}
+
+
+
+/*********************секция about****************/
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 58px 12% 118px;
+}
+
+.about__title {
+    position: relative;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 2.30625px;
+    color: #48555B;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.about__title::before {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: calc(50% - 26px);
+    width: 50px;
+    height: 2px;
+    background-color: #00a4e5;
+}
+
+.about__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 59px;
+}
+
+.about__content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 405px;
+    text-align: left;
+    margin-right: 56px;
+}
+
+.about__content-title {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.1875px;
+    color: #48555B
+}
+
+.about__content-text {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.1875px;
+    color: #48555B;
+}
+
+.about__cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about__card {
+    margin-left: 20px;
+    width: 140px;
+    height: 225px;
+    background-color: thistle;
+}
+
+.about__card-title {
+    margin: 15px 58px 150px 14px;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.about__card--plan {
+    background-image: url(../img/icons/cards/plan.png);
+}
+
+.about__card--manage {
+    background-image: url(../img/icons/cards/manage.png);
+}
+
+.about__card--build {
+    background-image: url(../img/icons/cards/deliver.png);
+}
+
+/****************секция proposial************/
+
+.proposial {
+    padding: 0 12% 115px;
+    background-color: white;
+}
+
+.proposial__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.proposial__title {
+    position: relative;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #48555B;
+}
+
+.proposial__title::before {
+    content: '';
+    position: absolute;
+    top: 35px;
+    width: 50px;
+    height: 2px;
+    background: #00a4e5;
+}
+
+
+.proposial__text {
+    width: 40%;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 19px;
+}
+
+.proposial__button {
+    width: 150px;
+    height: 40px;
+    background-color: #00A4E5;
+    border: none;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
+
+.proposial__button:hover {
+    background-color: #FFFFFF;
+    color: #00A4E5;
+    border: 1px solid #00A4E5;
+}
+
+
+.proposial__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 940px;
+    margin-top: 115px;
+}
+
+.proposial__card {
+    width: 295px;
+    height: 330px;
+    border: 2px solid #E6E6E6;
+}
+
+.proposial__card--project {
+    background-image: url(../img/icons/bitmap/shop.png);
+    background-repeat: no-repeat;
+    background-position: top 38px left 23px;
+}
+
+.proposial__card--structure {
+    background-image: url(../img/icons/bitmap/pens.png);
+    background-repeat: no-repeat;
+    background-position: top 38px left 23px;
+}
+
+.proposial__card--factory {
+    background-image: url(../img/icons/bitmap/factory.png);
+    background-repeat: no-repeat;
+    background-position: top 38px left 23px;
+}
+
+.proposial__card-title {
+    margin-top: 138px;
+    margin-left: 23px;
+    width: 250px;
+    height: 48px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.426667px;
+    color: #48555B;
+}
+
+.proposial__card-text {
+    width: 250px;
+    height: 92px;
+    margin-top: 13px;
+    margin-left: 23px;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 23px;
+}
+
+/***********секция order**************/
+
+.order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 490px;
+    padding-top: 115px;
+    background-image: url(../img/backgrounds/city.png);
+    background-position: center/cover;
+    background-repeat: no-repeat;
+}
+
+.order_title {
+    width: 350px;
+    height: 72px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #48555B;
+}
+
+/*************************footer**********************/
+
+
+/**************************************форма***********/
+
+.footer__heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0;
+    width: 100%;
+    height: 100px;
+    background-color: #171819;
+
+}
+
+.signup-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 680px;
+}
+
+.signup-form__title {
+    margin-right: 70px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+}
+
+
+.signup-form__btn {
+    width: 150px;
+    height: 40px;
+    background-color: #00A4E5;
+    border: none;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
+
+.signup-form__btn:hover {
+    background-color: #FFFFFF;
+    color: #00A4E5;
+    border: 1px solid #00A4E5;
+}
+
+/***********************footer__body**********/
+
+.footer__body {
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 12% 40px;
+    font-size: 11px;
+    color: #ffffff;
+    background-color: #141A20;
+}
+
+.company {
+    width: 250px;
+    height: 148px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.company__title {
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+}
+
+.footer__logo {
+    width: 101.62px;
+    height: 23px;
+}
+
+.company__text {
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 19px;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    width: 262px;
+}
+
+.footer__list-title {
+    font-weight: normal;
+    height: 15px;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+.footer__link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.footer__link:hover {
+    color: #00A4E5;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 141px;
+    height: 158px;
+}
+
+.contacts__title {
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+}
+
+.contacts-phone,
+.contacts-mail {
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+}
+
+.social__icons {
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+    height: 12.04px;
+}
+
+.icon {
+    background-color: antiquewhite;
+    width: 12.04px;
+    height: 12.04px;
+    fill: black;
+}
+
+/**********************copyright*************/
+
+.footer_copyright {
+    padding: 22px 0;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    background-color: #171819;
+}
+
+.copyright__text {
+    height: 15px;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+}
